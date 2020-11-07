@@ -1,0 +1,56 @@
+.paypal-styles {
+  margin: $large;
+  text-align: center;
+  > h2 {
+    text-align: left;
+  }
+  > p {
+    text-align: center;
+  }
+}
+
+.paypal-image {
+  max-width: 30rem;
+  display: inline-block;
+  vertical-align: top;
+  margin: auto;
+
+  @media (max-width: $desktop-breakpoint) {
+    // styles for larger screens
+    max-width: 18rem;
+    display: block;
+    max-width: 100%;
+  }
+}
+
+.download-link {
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  padding: 3rem;
+  transition: background-color 0.5s ease;
+  font-weight: bold;
+  &:hover {
+    background-color: red;
+  }
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0rem;
+  align-items: center;
+  // text-align: center;
+  font-size: $medium;
+  margin: auto;
+  margin-top: $medium;
+  max-width: 50%;
+
+  @media (max-width: $desktop-breakpoint) {
+    // styles for smaller screens
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+}
+
+.messages {
+    margin-top: $small;
+}

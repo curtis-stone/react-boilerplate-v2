@@ -1,31 +1,63 @@
 //rem instead of pixels
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: $off-white;
+  
+  > table {
+    padding: 2rem;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td,
+  th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  th {
+    text-align: center;
+  }
+
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  @media (max-width: $desktop-breakpoint) {
+    // styles for smaller screens
+    > h1 {
+      font-size: 2.5rem;
+    }
+  }
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    // background: $dark-blue;
-    color: $dark-grey;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: $medium;
-    line-height: 1.6;
-    // color: white
+  // background: $dark-blue;
+  color: $dark-grey;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: $medium;
+  line-height: 1.6;
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 button:disabled {
-    cursor: default;
+  cursor: default;
 }
 
 .is-active {
-    font-weight: bold;
-    
+  font-weight: bold;
+}
+
+.table {
+  max-width: 100%;
+  margin: auto;
 }

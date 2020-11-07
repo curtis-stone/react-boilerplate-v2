@@ -1,8 +1,11 @@
 import React from "react";
+import NavBar from "./NavBar";
+
+
 
 const ExpenseDashboardPage = (props) => (
   <div>
-    Dashboard page content
+    <NavBar />
   </div>
 );
 

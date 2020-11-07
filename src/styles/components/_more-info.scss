@@ -1,0 +1,140 @@
+.info-grid-container {
+  * {
+    background-color: transparent;
+    > button {
+      background-color: black;
+      transition: background-color 0.5s ease;
+      border-radius: 5px;
+      &:hover {
+        background-color: $hyper-blue;
+      }
+    }
+
+    > h4 {
+      background-color: black;
+    }
+  }
+  color: black;
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  grid-gap: 0.5rem;
+  background-color: none;
+  max-width: 70%;
+  margin: auto;
+  margin-bottom: $large;
+  margin-top: $large;
+
+  > div {
+    background-color: white;
+    border-radius: 5px;
+    text-align: left;
+    padding: 0rem 0rem $small 0rem;
+    font-size: $medium;
+    // transition: background-color 0.5s ease;
+
+    // &:hover {
+    //   background-color: rgba(189, 189, 189, 0.534);
+    // }
+  }
+  @media (max-width: $desktop-breakpoint) {
+    // styles for larger screens
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0rem;
+    align-items: center;
+    // text-align: center;
+    font-size: 1rem;
+    margin: fit-content;
+    max-width: 80%;
+  }
+}
+
+.info-container {
+  margin-top: $medium;
+ 
+  padding: 10px;
+  box-shadow: 1px 1px 10px rgb(128, 128, 128);
+
+  @media (max-width: $desktop-breakpoint) {
+    // styles for smaller screens
+    margin-bottom: 7rem;
+  }
+}
+
+.info-description {
+  display: block;
+  line-height: $large;
+
+  //   transition: background-color 0.5s ease;
+  // &:hover {
+  //   background-color: aliceblue;
+  // }
+
+  @media (max-width: $desktop-breakpoint) {
+    // styles for larger screens
+    display: inline-block;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    font-size: $small;
+  }
+}
+
+.info-title {
+  font-size: 2rem;
+  margin-top: $medium;
+  margin-left: $medium;
+  text-align: left;
+  font-weight: bold;
+  text-align: center;
+  // float: left;
+
+  @media (max-width: $desktop-breakpoint) {
+    text-align: center;
+  }
+}
+
+.info-details {
+  font-size: $small;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  margin-top: $small;
+  margin-left: $large;
+  margin-right: $large;
+  
+  //   display: block;
+  //   float: right;
+  float: left;
+  
+  @media (max-width: $desktop-breakpoint) {
+    // styles for larger screens
+    line-height: 2.5rem;
+    display: inline-block;
+    margin: $small;
+    text-align: left;
+    
+  }
+}
+
+.info-cover {
+  max-width: 28rem;
+  border-radius: 7px;
+  display: block;
+  // float: left;
+  // margin: $large;
+  margin: auto;
+  margin-bottom: $medium;
+  text-align: center;
+  margin-top: $medium;
+  // float: left;
+  // margin-bottom: 40rem;
+  // margin-right: $xl-size;
+
+  @media (max-width: $desktop-breakpoint) {
+    // styles for larger screens
+    display: inline-block;
+    margin: 0rem;
+    max-width: 100%;
+  }
+}

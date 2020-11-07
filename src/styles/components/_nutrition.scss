@@ -1,0 +1,66 @@
+.nutrition-button-link {
+  // background-color: $blue;
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+  display: inline-block; // makes sure vertical margin & padding take effect
+    opacity: .75;
+  font-size: $font-size-small;
+  line-height: 1;
+  padding: $small;
+  text-decoration: none;
+  transition: background-color 0.5s ease;
+  margin-top: $medium;
+  margin-bottom: $large;
+  &:hover {
+    background-color: $hyper-blue;
+  }
+}
+
+.nutrition-container {
+  * {
+    background-color: white;
+    > a {
+      background-color: black;
+    }
+  }
+  background-color: white;
+  margin-left: $medium;
+//   margin-right: $medium;
+
+// > table {
+//    margin-left: 0rem;
+// }
+
+}
+
+.sources-button {
+    background-color: $grey;
+  border-radius: 5px;
+  color: white;
+  display: inline-block; // makes sure vertical margin & padding take effect
+    opacity: .25;
+  font-size: $font-size-small;
+  line-height: 1;
+  padding: $small;
+  text-decoration: none;
+  transition:  0.5s ease;
+  margin-top: .5rem;
+
+  margin-right: .5rem;
+  &:hover {
+      opacity: .75;
+    background-color: $dark-grey;
+  }
+}
+
+.header-icon {
+    max-height: 3.5rem;
+    margin-left: .75rem;
+}
+
+.icon {
+    max-height: 2rem;
+    margin-right: .75rem;
+    margin-left: .75rem;
+}

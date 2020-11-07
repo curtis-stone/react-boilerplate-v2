@@ -1,18 +1,79 @@
 .page-header {
-    background: $off-white;
-    margin-bottom: $large;
-    padding: $large 0;
+  background: $off-white;
+  margin-bottom: $large;
+  padding: $large 0;
 }
 
 .page-header__actions {
-    margin-top: $medium;
-    
+  margin-top: $medium;
 }
 
 .page-header__title {
-    font-weight: 300;
-    margin: 0;
-    span {
-        font-weight: bold; // or 700
-    }
+  font-weight: 300;
+  margin: 0;
+  span {
+    font-weight: bold; // or 700
+  }
+}
+
+
+.page-title {
+  margin-top: $large;
+  margin-bottom: $large;
+  margin-left: $medium;
+  background-color: white;
+  // font-style: italic;
+  @media (max-width: $desktop-breakpoint) {
+    margin: auto;
+    margin-left: auto;
+    margin-top: $small;
+    margin-bottom: $small;
+    margin-left: $medium;
+    text-align: left;
+  }
+}
+
+.page-content {
+  > p {
+    background-color: white;
+    margin-left: $medium;
+  }
+  > h3 {
+    background-color: white;
+    margin-left: $medium;
+  }
+  > ul {
+    background-color: white;
+  }
+  > li {
+    background-color: white;
+  }
+  > a {
+    margin-left: $medium;
+  }
+  text-align: left;
+  line-height: $large;
+  margin: auto;
+  margin-top: $large;
+  margin-bottom: 10rem;
+  
+  background-color:  white;
+  border-radius: 10px;
+  padding: $medium;
+  max-width: 60%;
+  box-shadow: 1px 1px 10px rgb(128, 128, 128);
+  // font-style: italic;
+  @media (max-width: $desktop-breakpoint) {
+    
+    margin: auto;
+    margin-left: auto;
+    margin-top: $large;
+    margin-bottom: $medium;
+    text-align: left;
+    max-width: 90%;
+  }
+}
+
+.background {
+  background-color: white;
 }

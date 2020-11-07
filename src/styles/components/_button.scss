@@ -1,20 +1,100 @@
 .button {
-    background-color: $blue;
-    border: none;
-    color: white;
-    display: inline-block; // makes sure vertical margin & padding take effect
-    font-weight: 300;
-    font-size: $font-size-large;
-    line-height: 1;
-    padding: $small;
-    text-decoration: none;
+  // background-color: $blue;
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  display: inline-block; // makes sure vertical margin & padding take effect
+  font-weight: 300;
+  font-size: $font-size-large;
+  line-height: 1;
+  padding: $small;
+  text-decoration: none;
+  transition: background-color 0.5s ease;
+  font-weight: bold;
+  &:hover {
+    background-color: $hyper-blue;
+  }
 }
 
-.button--link {
-    background: none;
+.header-logout {
+  
+  border: none;
+  
+  color: white;
+  display: inline-block; // makes sure vertical margin & padding take effect
+  font-weight: 300;
+  font-size: $font-size-large;
+  line-height: 1;
+  padding: $small;
+  text-decoration: none;
 }
+.button--link {
+  background: none;
+}
+
+.button--link2 {
+  background-color: $blue;
+  border: none;
+  color: white;
+  justify-content: right;
+  // display: inline-block; // makes sure vertical margin & padding take effect
+  font-weight: 300;
+  font-size: $font-size-large;
+  line-height: 1;
+  padding: $small;
+  text-decoration: none;
+}
+
 
 .button--secondary {
-@extend button;
-background-color:#888;
+  @extend button;
+  background-color: #888;
+}
+
+.link {
+  background-color: black;
+  color: white;
+  border-radius: 25px;
+  padding: 1rem;
+  margin: 0rem $small 0rem $small;
+  text-decoration: none;
+  transition: background-color 0.5s ease;
+  &:hover {
+    background-color: $hyper-blue;
+  }
+  @media (max-width: $desktop-breakpoint) {
+    // styles for larger screens
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: $small;
+    align-items: center;
+    text-align: center;
+    font-size: $small;
+  }
+}
+
+.info-button {
+  color: white;
+  border-radius: 5px;
+  padding: 2rem;
+    margin-top: 1rem;
+  transition: background-color 0.5s ease;
+  font-weight: bold;
+  &:hover {
+    background-color: $hyper-blue;
+  }
+  display: flexbox;
+  float: right;
+  line-height: 0rem;
+  text-align: left;
+  margin-right: $medium;
+  
+  @media (max-width: $desktop-breakpoint) {
+    // styles for smaller screens
+    text-align: right;
+    margin-right: 0rem;
+  }
+
 }

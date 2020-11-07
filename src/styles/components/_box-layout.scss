@@ -1,6 +1,6 @@
 .box-layout {
     align-items: center;
-    background: url('/images/bg.jpg');
+    background: url('/images/moon2.jpg');
     background-size: cover;
     display: flex;
     height: 100vh; // 100% of viewport height
@@ -9,15 +9,47 @@
 }
 
 .box-layout__box {
-    background: fade-out(white, 0.15);
+    // background: fade-out(white, 0.15);
+    background-color: #FFFBFB;
     border-radius: 3px;
     padding: $large $medium;
     text-align: center;
-    width: 25rem;
+    width: rem;
     
 }
 
 .box-layout__title {
     margin: 0 0 $medium 0;
     line-height: 1;
+    background-color: transparent;
 }
+
+.box-layout__description {
+    margin: 0 0 $medium 0;
+    line-height: 1.5;
+    background-color: transparent;
+}
+
+.login-logo {
+    display: block;
+    margin: $medium;
+    margin: auto;
+    max-width: 10rem;
+    opacity: .60;
+    // float: left;
+  
+    @media (max-width: $desktop-breakpoint) {
+      // styles for larger screens
+      display: inline-block;
+      margin: auto;
+      max-width: 10rem;
+    }
+  }
+  .box-layout__signature {
+    background-color: transparent;
+    color: #00000078;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0 0 $medium 0;
+    padding-top: $small;
+  }

@@ -1,0 +1,195 @@
+.home-logo {
+  max-width: 31rem;
+  padding: $small;
+  max-width: 30rem;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 0.5rem;
+  margin: auto;
+ 
+  
+  @media (max-width: $desktop-breakpoint) {
+    // styles for larger screens
+    max-width: 30rem;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0.5rem;
+    margin: auto;
+    
+  }
+}
+.nav-container {
+  color: white;
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  max-width: fit-content;
+  margin: auto;
+  > div {
+    border-radius: 5px;
+    font-size: $small;
+  }
+  > p {
+    color: black;
+    text-align: center;
+    font-style: italic;
+  }
+  @media (max-width: $desktop-breakpoint) {
+    // styles for larger screens
+    display: flex;
+    flex-direction: column;
+    margin-bottom: $large;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+    > p {
+      margin-top: 5rem;
+    }
+  }
+}
+
+//   .program-container {
+
+//   }
+.nav-content {
+  background-color: black;
+  border-radius: 2rem;
+  display: inline-block;
+  margin: 0rem 1rem 2rem 1rem;
+  align-items: center;
+  text-align: center;
+  color: $off-white;
+  transition: background-color 0.5s ease;
+  padding: 0.75rem 3rem 0.75rem 3rem;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $hyper-blue;
+  }
+  @media (max-width: $desktop-breakpoint) {
+    // styles for larger screens
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0rem;
+    margin-top: 1.5rem;
+    align-items: center;
+    text-align: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    font-size: 1rem;
+    text-decoration: none;
+    max-width: 90%;
+  }
+}
+.navbar {
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+  padding: 0rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+
+  @media (max-width: $desktop-breakpoint) {
+    // styles for larger screens
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0.5rem;
+  }
+}
+
+.nav-link {
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  font-size: $medium;
+  padding: 2.5rem 2rem 2rem 2rem;
+  text-decoration: none;
+  transition: background-color 0.5s ease;
+  &:hover {
+    background-color: $off-black;
+  }
+
+  @media (max-width: $desktop-breakpoint) {
+    // styles for larger screens
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+    transition: background-color 0.5s ease;
+    border-radius: 0px;
+    &:hover {
+      background-color: $off-black;
+    }
+  }
+}
+
+.nav-title {
+  align-items: center;
+  text-align: center;
+  color: black;
+  display: inline-flexbox;
+  font-size: $medium;
+  font-weight: bold;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  padding: 2rem 2rem 2rem 2rem;
+  border-radius: 2rem 10rem 10rem 2rem;
+
+  @media (max-width: $desktop-breakpoint) {
+    // styles for smaller screens
+    align-content: center;
+    padding: $small;
+    font-size: $medium;
+    font-weight: bold;
+    
+  }
+}
+
+.sub-nav-link-container {
+  margin: auto;
+  text-align: center;
+  font-size: $small;
+  max-width: 100%;
+  text-decoration: none;
+  background: url('/images/moon2.jpg') fade-out(white, .15);
+  border-radius: 0rem 0rem 80% 80%;
+  padding:$small;
+  &:active {
+    color: red;
+  }
+
+  @media (max-width: $desktop-breakpoint) {
+    // styles for larger screens
+    border-radius: 0px;
+    max-width: 100%;
+  }
+}
+
+.sub-nav-link {
+  border-radius: 9px;
+  color: white;
+  padding: 1rem;
+  // font-weight: 700;
+  margin: 0rem $small 0rem $small;
+  text-decoration: none;
+  transition: color 0.5s ease;
+  &:hover {
+    color: $grey;
+  }
+  &:active {
+    color: red;
+  }
+  @media (max-width: $desktop-breakpoint) {
+    // styles for larger screens
+    border-radius: 0px;
+    display: flexbox;
+    flex-direction: row;
+    // margin: auto;
+    margin: 0rem 1px 0rem 1px;
+    margin-bottom: $small;
+    // align-items: center;
+    // text-align: center;
+    font-size: $small;
+  }
+}

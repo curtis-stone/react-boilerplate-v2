@@ -1,0 +1,139 @@
+a {
+    text-decoration: none;
+}
+.exercise-container {
+  * {
+    background-color: transparent;
+  }
+  color: black;
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  grid-gap: 2px;
+  background-color: none;
+  max-width: 70%;
+  margin: auto;
+  
+
+  > div {
+    background-color: white;
+    border-radius: 5px;
+    text-align: left;
+    padding: 0rem 0rem $small 0rem;
+    font-size: $medium;
+    transition: background-color 0.5s ease;
+
+    &:hover {
+      background-color: rgba(189, 189, 189, 0.534);
+    }
+  }
+  @media (max-width: $desktop-breakpoint) {
+    // styles for larger screens
+    max-width: 100%;
+    margin: 0 $small 0 $small;
+  }
+}
+
+.exercise-content {
+  box-shadow: 1px 1px 10px rgb(128, 128, 128);
+}
+.exercise-cover {
+  max-width: 15rem;
+  display: block;
+  margin: $medium;
+  float: left;
+
+  @media (max-width: $desktop-breakpoint) {
+    // styles for larger screens
+    display: inline-block;
+    margin: 0rem;
+    max-width: 100%;
+  }
+}
+
+.exercise-description {
+  display: block;
+  line-height: $large;
+  transition: background-color 0.5s ease;
+  // &:hover {
+  //   background-color: aliceblue;
+  // }
+> a {
+    text-decoration: none;
+}
+  @media (max-width: $desktop-breakpoint) {
+    // styles for larger screens
+    max-width: 100%;
+    align-items: center;
+    text-align: left;
+    font-size: $small;
+    margin-left: $small;
+  }
+}
+
+.exercise-title {
+  font-size: $medium;
+}
+.exercise-details {
+  font-size: $small;
+  line-height: $small;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  // max-width: 40%;
+  @media (max-width: $desktop-breakpoint) {
+    // styles for larger screens
+    line-height: $medium;
+
+    max-width: 100%;
+  }
+}
+
+.exercise-vid {
+  border: none;
+  display: block;
+  margin: $medium;
+  float: right;
+  float: top;
+ 
+  @media (max-width: $desktop-breakpoint) { 
+  float: left;
+  }
+}
+
+.exercise-vid-title {
+  font-size: $medium;
+  margin-left: $medium;
+  display: inline-block;
+  font-size: 2rem;
+  @media (max-width: $desktop-breakpoint) {
+    // styles for larger screens
+    line-height: $medium;
+
+    max-width: 100%;
+    display: inline-block;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    text-align: left;
+    
+  }
+}
+
+.exercise-vid-details {
+  font-size: $small;
+  // line-height: $small;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  // max-width: 40%;
+  margin: $medium;
+  @media (max-width: $desktop-breakpoint) {
+    // styles for larger screens
+    line-height: $medium;
+
+    max-width: 100%;
+    display: inline-block;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    text-align: left;
+  }
+}

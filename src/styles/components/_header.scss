@@ -1,19 +1,37 @@
 .header {
     background-color: $dark-blue;
 }
-
-.header__content {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    padding: $small 0
+.header * {
+    background-color: $dark-blue ;
 }
 
+
+.header__content {
+    // align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    // justify-content: space-between;
+    padding:0;
+    background-color: $dark-blue ;
+    justify-content: space-between;
+}
+
+.header-logo {
+    max-height: 5rem;
+    margin-top: .5rem;
+    border-radius: 100px;
+}
 .header__title {
     color: white;
+    background-color: $dark-blue ;
     text-decoration: none; // clears underline on link
     h1 { // targets all h1's in "header__title"
         margin: 0;
     }
+}
+
+.header-image {
+    max-width: 10rem;
+    background-color: red;
 }
 

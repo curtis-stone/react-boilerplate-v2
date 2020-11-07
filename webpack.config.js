@@ -68,21 +68,44 @@ module.exports = (env) => {
             // node converts scss to readable css
           }),
         },
+        {
+          test: /\.(png|svg|jpg|gif|pdf)$/,
+          use: [
+            {
+              loader: 'file-loader',
+              options: {
+                name: '[name].[ext]'
+              }
+            }
+          ]
+        }
       ],
     },
     // THEN set up a configuration file for this loader
     plugins: [
       CSSExtract, // extracts css files into it's own file
       new webpack.DefinePlugin({
-        'process.env.FIREBASE_API_KEY': JSON.stringify(process.env.FIREBASE_API_KEY),
-        'process.env.FIREBASE_AUTH_DOMAIN': JSON.stringify(process.env.FIREBASE_AUTH_DOMAIN),
-        'process.env.FIREBASE_DATABASE_URL': JSON.stringify(process.env.FIREBASE_DATABASE_URL),
-        'process.env.FIREBASE_PROJECT_ID': JSON.stringify(process.env.FIREBASE_PROJECT_ID),
-        'process.env.FIREBASE_STORAGE_BUCKET': JSON.stringify(process.env.FIREBASE_STORAGE_BUCKET),
-        'process.env.FIREBASE_MESSAGING_SENDER_ID': JSON.stringify(process.env.FIREBASE_MESSAGING_SENDER_ID)
-      })
+        "process.env.FIREBASE_API_KEY": JSON.stringify(
+          process.env.FIREBASE_API_KEY
+        ),
+        "process.env.FIREBASE_AUTH_DOMAIN": JSON.stringify(
+          process.env.FIREBASE_AUTH_DOMAIN
+        ),
+        "process.env.FIREBASE_DATABASE_URL": JSON.stringify(
+          process.env.FIREBASE_DATABASE_URL
+        ),
+        "process.env.FIREBASE_PROJECT_ID": JSON.stringify(
+          process.env.FIREBASE_PROJECT_ID
+        ),
+        "process.env.FIREBASE_STORAGE_BUCKET": JSON.stringify(
+          process.env.FIREBASE_STORAGE_BUCKET
+        ),
+        "process.env.FIREBASE_MESSAGING_SENDER_ID": JSON.stringify(
+          process.env.FIREBASE_MESSAGING_SENDER_ID
+        ),
+      }),
     ],
-
+    
     devtool: isProduction ? "source-map" : "inline-source-map", // source map to find errors in our code. See webpack.com devtools
     // source-maps also makes debugging much easier ^
     // source-map is external file and better for productions (slows down speed slightly)
